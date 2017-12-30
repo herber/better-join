@@ -1,0 +1,42 @@
+{
+	"name": "better-join",
+	"version": "1.0.0",
+	"description": "A better way of joining strings",
+	"license": "MIT",
+	"repository": "herber/better-join",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "formatted && nyc ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"better-join",
+		"join",
+		"array",
+		"append",
+		"better"
+	],
+	"dependencies": {
+		"formatted": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"codecov": "^2.2.0",
+		"nyc": "^11.0.0"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
